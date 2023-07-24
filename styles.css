@@ -12,7 +12,7 @@
       background-color: var(--terciario);
  	margin:0;
  	padding:0;
-
+font-family: serif;
     }
     
     #fondo{z-index:-1; position:absolute; right:0; max-width:50vw; top:calc(50% - 25vw); opacity:calc(0.075);}
@@ -149,7 +149,7 @@ header p:nth-child(3){display:block}
     content: ": "attr(href);
   }
 
-main{display: flex; flex-direction: column-reverse;}
+main{display: flex; flex-direction: column-reverse; justify-content: space-between}
 header {display: block;}
 
 h1{color:var(--principal);}
@@ -169,12 +169,15 @@ h4 strong {color:black; font-style: italic;}
 
 
 
-  aside hr {display: none}
-  aside {display: flex; flex-direction: column; justify-content: flex-start;}
-  main,section, aside, footer,p {margin:0; padding: 0}
+
+  aside {display: flex; flex-direction: column; justify-content: flex-start; padding:0;margin-top: 2em}
+  aside h3{font-size: 16px;}
+    aside hr {display: none}
+  
+  main,section, footer,p {margin:0; padding: 0}
   aside ul {display: flex; gap: 3em }
 
 
-  footer:after{content: 'Impreso desde la web nachocorbillon.github.io';color: var(--demo);font-style: italic;}
+  body:after{content: 'Impreso desde la web nachocorbillon.github.io';color: var(--demo);font-style: italic; position: absolute; right:0; bottom: 0}
 
 }
