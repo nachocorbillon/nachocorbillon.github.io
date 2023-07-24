@@ -136,4 +136,45 @@ section p span {margin:0.25em}
     @media (max-width:320px) {  *{font-size:1em!important}
     section:last-child, aside div{display:none}
       }
- 
+
+  @media print {
+
+.noprint{display: none;}
+
+header p:nth-child(3){display:block}
+  a{
+    margin:0.25em 0;
+  }
+  a:after {
+    content: ": "attr(href);
+  }
+
+main{display: flex; flex-direction: column-reverse;}
+header {display: block;}
+
+h1{color:var(--principal);}
+
+ #Conocimientos h3 {display: none}
+
+#Conocimientos ul {display: flex; list-style-type: none; font-size: 1.2em; margin:0;padding: 0; gap:1em;
+  justify-content: space-between; font-style:italic;}
+ #Conocimientos li:last-child:after{content:''}
+
+ article section:not(#Proyectos){width: 55%}
+ h3{margin-top: 2em}
+ #Proyectos h4{font-weight: bold; margin-bottom: 1em}
+ #Proyectos h4:before{content:'➤ '; color:var(--principal);}
+h4 strong {color:black; font-style: italic;}
+  p a {display: block}
+
+
+
+  aside hr {display: none}
+  aside {display: flex; flex-direction: column; justify-content: flex-start;}
+  main,section, aside, footer,p {margin:0; padding: 0}
+  aside ul {display: flex; gap: 3em }
+
+
+  footer:after{content: 'Impreso desde la web nachocorbillon.github.io';color: var(--demo);font-style: italic;}
+
+}
