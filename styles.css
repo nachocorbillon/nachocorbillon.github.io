@@ -153,8 +153,8 @@ section p span {margin:0.25em 0}
   }
 
 main{display: flex; flex-direction: column-reverse; justify-content: space-between}
-header {display: block;}
-h1{color:var(--principal);background: var(--terciario);}
+header {display: block;background: var(--terciario);}
+h1{color:var(--principal);}
 header p{color:black}
 header p:nth-child(3){display:block}
 
