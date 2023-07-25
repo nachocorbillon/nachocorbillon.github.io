@@ -119,9 +119,11 @@ h4 span::after{content:')'}
 }
 
 @media (max-width:820px) {aside ul li{visibility:visible}
-span{display:block}
 
-section p span {margin:0.25em}
+span{display:block}
+span.noprint, span a {display:inline}
+
+section p span {margin:0.25em 0}
 }
 @media (max-width:500px) {#fondo{display:none}
    main{           display: flex;
