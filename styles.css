@@ -35,7 +35,7 @@ header p:nth-child(3){display:none}
 header:hover p:nth-child(2){display:none}
 header:hover p:nth-child(3){display:block}
 
-article, section {margin:0; padding:0}
+#Portfolio, section {margin:0; padding:0}
 
     aside {position:relative;
        font-family: Geneva, Arial, Helvetica, sans-serif;
@@ -62,27 +62,27 @@ article, section {margin:0; padding:0}
     
 
 
-    article {
+    #Portfolio {
     margin:100px 0 calc(.5vh + .5vw);
     padding-top: calc(.5vh + .5vw);
 
     }
     section{width:minmax(200px,40%);padding:18px 36px 0;}
 
-    article h2 {
+    #Portfolio h2 {
       font-size: 24px;
     }
 
-    article h3 {
+    #Portfolio h3 {
       font-size: 20px;
     }
     
     
-    article section h4{margin-bottom:0; font-weight:normal}
+    #Portfolio section h4{margin-bottom:0; font-weight:normal}
      h4 em::after{content:' -'} 
       
       
-    article section p{margin-top:0; max-width:600px}
+    #Portfolio section p{margin-top:0; max-width:600px}
     
     ul{padding-left:1em; margin-bottom:0;}
     
@@ -141,7 +141,7 @@ section p span {margin:0.25em 0}
 
   @media print {
 
-.noprint, #Proyectos span.noprint{display: none;}
+.noprint, #Proyectos span.noprint{display:none !important;}
 
 
 
@@ -164,7 +164,7 @@ header p:nth-child(3){display:block}
   justify-content: space-between; font-style:italic;}
  #Conocimientos li:last-child:after{content:''}
 
- article section:not(#Proyectos){width: 55%}
+ #Portfolio section:not(#Proyectos){width: 55%}
  h3{margin-top: 2em}
  #Proyectos h4{font-weight: bold; margin-bottom: 1em}
  #Proyectos h4:before{content:'➤ '; color:var(--principal);}
@@ -174,7 +174,7 @@ h4 strong {color:black; font-style: italic;}
 
 
 
-  aside {display: flex; flex-direction: column; justify-content: flex-start; padding:0;margin-top: 2em; background: var(--terciario);}
+  aside {display: flex; flex-direction: column; justify-content: flex-start; padding:0;margin-top: 1.2em; background: var(--terciario);}
   aside h3{font-size: 16px;}
     aside hr {display: none}
   
