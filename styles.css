@@ -141,7 +141,7 @@ section p span {margin:0.25em 0}
 
   @media print {
 
-.noprint{display: none;}
+.noprint, #Proyectos span.noprint{display: none;}
 
 
 
