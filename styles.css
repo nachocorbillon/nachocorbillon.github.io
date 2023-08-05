@@ -29,7 +29,7 @@ align-items:center;left:0;top:10px; width:99%; max-width:700px;}
 
 h1{font-weight:normal;font-family:serif;color:var(--secundario); margin:0;
 font-size:36px; padding:0}
-header p{color:var(--alternativo);font-size:24px:margin:0;padding:0}
+header p{color:var(--alternativo);font-size:24px;margin:0;padding:0}
 
 header p:nth-child(3){display:none}
 header:hover p:nth-child(2){display:none}
@@ -78,7 +78,7 @@ header:hover p:nth-child(3){display:block}
     }
     
     
-    #Portfolio section h4{margin-bottom:0; font-weight:normal}
+    #Portfolio section h4{margin-bottom:0; font-weight:normal;}
      h4 em::after{content:' -'} 
       
       
@@ -114,13 +114,13 @@ p a:first-child {color:var(--demo);}
 
 
 @media (min-width:821px){
-h4 span::before{content:'('}
-h4 span::after{content:')'}
+.periodo::before{content:'('}
+.periodo::after{content:')'}
 }
 
 @media (max-width:820px) {aside ul li{visibility:visible}
 
-span{display:block}
+.periodo{display:block}
 span.noprint, span a {display:inline}
 
 section p span {margin:0.25em 0}
@@ -141,7 +141,7 @@ section p span {margin:0.25em 0}
 
   @media print {
 
-.noprint, #Proyectos span.noprint{display:none !important;}
+.noprint, #Proyectos noprint {display:none !important;}
 
 
 
