@@ -37,7 +37,7 @@ header:hover p:nth-child(3){display:block}
 
 #Portfolio, section {margin:0; padding:0}
 
-    aside {position:relative;
+    #side {position:relative;
        font-family: Geneva, Arial, Helvetica, sans-serif;
        background-color:var(--secundario);
        margin:0;
@@ -45,15 +45,15 @@ header:hover p:nth-child(3){display:block}
     }
 
 
-    aside p, aside h3 {
+    #side p, #side h3 {
       font-size: 12px;
       margin:0;
     }
     
-    aside a {width:100%; text-align:center; display:block; padding: 1em 0; color:var(--principal);
+    #side a {width:100%; text-align:center; display:block; padding: 1em 0; color:var(--principal);
     }
     
-    aside a:hover{background-color:var(--principal);color:var(--secundario);
+    #side a:hover{background-color:var(--principal);color:var(--secundario);
     text-decoration:none }
     
     hr{color:var(--principal)}
@@ -86,7 +86,7 @@ header:hover p:nth-child(3){display:block}
     
     ul{padding-left:1em; margin-bottom:0;}
     
-    aside ul{
+    #side ul{
    
       padding:1em;
       padding-bottom:0;
@@ -95,11 +95,11 @@ header:hover p:nth-child(3){display:block}
       
     }
     
-   aside ul li{padding-bottom:2em; visibility:hidden}
-   aside ul  li strong, li b{visibility:visible}
-    aside ul li br{margin:0 0 0.5em;}
+   #side ul li{padding-bottom:2em; visibility:hidden}
+   #side ul  li strong, li b{visibility:visible}
+    #side ul li br{margin:0 0 0.5em;}
     
-    aside h3{ color:var(--principal); margin-top:2em}
+    #side h3{ color:var(--principal); margin-top:2em}
     
     li:hover{visibility:visible}
     
@@ -118,7 +118,7 @@ p a:first-child {color:var(--demo);}
 .periodo::after{content:')'}
 }
 
-@media (max-width:820px) {aside ul li{visibility:visible}
+@media (max-width:820px) {#side ul li{visibility:visible}
 
 .periodo{display:block}
 span.noprint, span a {display:inline}
@@ -128,7 +128,7 @@ section p span {margin:0.25em 0}
 @media (max-width:500px) {#fondo{display:none}
    main{           display: flex;
       flex-direction:column-reverse; gap:36px}
-    	aside{padding-top:0}
+    	#side{padding-top:0}
     	#contacto{margin-top:0}
     	
     	header p:nth-child(2){display:none}
@@ -136,7 +136,7 @@ section p span {margin:0.25em 0}
       }
  
     @media (max-width:320px) {  *{font-size:1em!important}
-    section:last-child, aside div{display:none}
+    section:last-child, #side div{display:none}
       }
 
   @media print {
@@ -174,14 +174,12 @@ h4 strong {color:black; font-style: italic;}
 
 
 
-  aside {display: flex; flex-direction: column; justify-content: flex-start; padding:0;margin-top: 1.2em; background: var(--terciario);}
-  aside h3{font-size: 16px;}
-    aside hr {display: none}
+  #side {display: flex; flex-direction: column; justify-content: flex-start; padding:0;margin-top: 1.2em; background: var(--terciario);}
+  #side h3{font-size: 16px;}
+    #side hr {display: none}
   
   main,section, footer,p {margin:0; padding: 0}
-  aside ul {display: flex; gap: 3em }
-
-
+  #side ul {display: flex; gap: 3em }
   body:after{content: 'Impreso desde la web nachocorbillon.github.io';color: var(--demo);font-style: italic; position: absolute; right:0; bottom: 0}
 
 }
