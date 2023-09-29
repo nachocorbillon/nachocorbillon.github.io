@@ -95,13 +95,14 @@ header:hover p:nth-child(3){display:block}
       
     }
     
-   aside ul li{padding-bottom:2em; visibility:hidden}
+   aside ul li{padding-bottom:2em;}
    aside ul  li strong, li b{visibility:visible}
     aside ul li br{margin:0 0 0.5em;}
     
     aside h3{ color:var(--principal); margin-top:2em}
     
-    li:hover{visibility:visible}
+    aside ul li span {visibility:hidden}
+    aside ul li:hover span{visibility:visible}
     
     
     strong{font-weight:normal;  color:var(--principal)}
